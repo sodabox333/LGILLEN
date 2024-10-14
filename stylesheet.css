@@ -1,0 +1,197 @@
+/* this is a CSS file*/
+/* i am going to use comments assiduously */
+
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+    }
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+    }
+
+
+
+body{ background-color: #ecfefe; 
+    font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; 
+    }
+
+figure{ max-width: 750px; 
+    text-align: center;
+    padding: -5px;
+    margin-top: 10px;
+    }
+
+figcaption{color: darkslategray;
+    pading: 2px;
+    margin: 10px;
+    }
+
+img{    max-width:100%; 
+        text-align: center;
+        border: thick solid;
+        border: 3px solid;
+        border-color: lightslategrey;
+        
+        box-shadow: 6px 4px 8px;
+        box-color: green;    }   /* you need those two rules figcaption and img width together*/
+
+h1{  font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    }
+
+
+h2{ text-align: center; 
+    }
+
+h3{  font-size: 70;
+    font-weight: 700;
+    text-align: center;}
+
+h6{
+    text-align: center;
+    margin:3px;}   /* try negative numbers to take away space or you could put them 
+							in a class together to move em closer together*/
+
+p { text-align: justify; }
+
+
+.LG{  
+    font-weight: bold;
+    font-size: 25px;
+    color: lightslategrey;
+    margin-bottom: -5px;
+    color: rgba(0,0,0,0.6);
+    text-shadow: 1px 3px 2px rgba(0,0,0,0.2),
+     0px -5px 35px rgba(255,255,255,0.3)
+
+    }
+
+.heading-box{  
+        background-color: #c7f3f3;
+        /*padding: 5px*/;
+         border: 2px solid;
+        border-color: lightsteelblue;
+        margin: auto;
+        max-width: 750px;
+        text-align: center;
+        margin-top: 0px;}
+
+
+.container {
+        border: 2px solid;
+        padding: 10px;
+        border-color: lightsteelblue;
+		margin: auto;
+		max-width: 750px;
+        text-align: left;
+        padding-top: 2px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 20px;
+        margin-top: 20px;
+        
+        }
+
+.issues {
+        
+        font-style: strong;
+        color:darkslategray;
+        font-size: 28px;
+        padding-top: 30px;
+
+    }
+
+
+.ltbluebox {background-color: #c7f3f3;}
+
+.greybox {background-color: #d8e7e0;}
+
+/*.footerthing { max-width: 150px; background-color: lightcyan;}*/
+
+.videobox { 
+        border: thin solid;
+        border-color: lightsteelblue;
+        margin: auto;
+        max-width: 750px;
+        text-align: center;
+        padding-top: 3px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;} 
+
+.mediabox {text-justify: left;
+    text-align: left;    }
+
+
+
+
+        
+
+
+
+
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    /* all the rules have to live in here!!!*/
+	
+    .container { 
+        width: 400px;
+        height: 580 px;
+        }
+
+     .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+        } 
+ 
+
+	.container{
+			margin:auto;
+	   }
+
+
+
+
+
+
+
+/* reminder that all my desktop rules need to go above this comment*/
+
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
